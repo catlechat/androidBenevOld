@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/privacyScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PrivacyScrenn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".PrivacyScrenn">
+        <TextView
+            android:id="@+id/backPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/privacy"
+            android:textColor="@color/whiteBlue"
+            android:textSize="25sp"
+            app:drawableStartCompat="@drawable/ic_baseline_chevron_left_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:textColor="@color/whiteBlue"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:text="@string/policyTitle"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/whiteBlue"
+            android:textSize="20sp"
+            android:justificationMode="inter_word"
+            android:text="@string/policyDescription"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/whiteBlue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:justificationMode="inter_word"
+            android:text="@string/whyPolicyTitle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/whiteBlue"
+            android:textSize="20sp"
+            android:justificationMode="inter_word"
+            android:text="@string/whyPolicy"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/whiteBlue"
+            android:textSize="20sp"
+            android:justificationMode="inter_word"
+            android:text="@string/policyExemple"/>
+
+
+    </LinearLayout>
+</ScrollView>

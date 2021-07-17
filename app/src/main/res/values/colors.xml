@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="whiteBlue">#BFE1EC</color>
+    <color name="blueLight">#7AA0AC</color>
+    <color name="blueMiddle">#296F87</color>
+    <color name="blueDarak">#245E71</color>
+    <color name="blueNet">#144351</color>
+    <color name="blueNight">#113945</color>
+    <color name="redError">#F40000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

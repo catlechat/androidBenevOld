@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">BenevOld</string>
+    <string name="welcome">Welcome !</string>
+    <string name="pleaseLoginMessage">Please login to continue</string>
+    <string name="forgotThePassword">Forgot the password ?</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Full Name</string>
+    <string name="login">Login</string>
+    <string name="singup">Singup</string>
+    <string name="errorMessageLogin">Error Type : Error Message</string>
+    <string name="newUser">New User ? Sign Up</string>
+    <string name="oldUser">Already have an account ? Log In</string>
+
+    <string name="forgotPassword">Forgot your password ?</string>
+    <string name="enterMail">Please enter your email to continue</string>
+    <string name="passwordMessage">An email will be sent with a confirmation link, open it to change your password</string>
+    <string name="errorMail">Email not found !</string>
+    <string name="send">Send</string>
+    <string name="back">Back</string>
+
+    <string name="newPassword">Enter a new password</string>
+    <string name="newPasswordMessage">It should be more than 6 characters and have at least one upper case</string>
+    <string name="passwordAggain">Password again</string>
+    <string name="passwordError">Password do not match !</string>
+    <string name="changeButton">Change</string>
+    <string name="profil">Profile</string>
+    <string name="request">My Requests</string>
+    <string name="newrequest">Submit a new Request</string>
+    <string name="contact">Contact</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="welcomeBackMessage">WELCOME BACK, HOW CAN WE HELP YOU TODAY ?</string>
+    <string name="myProfile">My Profile</string>
+    <string name="settingsProfile">Edit Profile</string>
+    <string name="contactUs">Contact us</string>pri
+    <string name="privacy">Privacy</string>
+    <string name="information">Information</string>
+    <string name="shareApp">Share App</string>
+    <string name="logOut">Logout</string>
+    <string name="nameTest">Ivan CEAICOVSCHI</string>
+    <string name="emailTest">ceaika007@yahoo.com</string>
+    <string name="nulber">0616563508</string>
+    <string name="adress">116 Avenue de la Republique</string>
+    <string name="adress2">92400 COURBEVOIE</string>
+    <string name="editP">Edit Profile</string>
+    <string name="save">Save</string>
+    <string name="NF">Nothing found</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="contactTitle">Speak with out brilliant and knowledgeable support team</string>
+    <string name="contactSubTitle">Support is available Mon-Fri 8AM-7PM ET / 10AM-Midnight GMT</string>
+    <string name="ivan">Ivan CEAICOVSCHI</string>
+    <string name="raph">Raphael ISRAEL</string>
+    <string name="eduard">Eduard SERBAN</string>
+    <string name="sendEmail">Send us an email</string>
+    <string name="emailValue">team.support@benevold.com</string>
+    <string name="giveCall">Give us a call</string>
+    <string name="callValue">(+33) 6 16 56 35 08</string>
+    <string name="comeSee">Come see us</string>
+    <string name="seeValue">242 Rue du Faubourg Saint-Antoine, 75012 Paris</string>
+    <string name="policyTitle">Review BenevOld Privacy Policy</string>
+    <string name="policyDescription">It\'s important that you understand what information
+        BenevOld collects, uses and how you can control it. We explain it in detail in our
+        updated BenevOld Privacy Policy and you can review the key points below.</string>
+    <string name="whyPolicyTitle">Why does BenevOld use your data ?</string>
+    <string name="whyPolicy">Mainly to keep you safe, all the data we collect are only used
+        to make you feel as protected as we can.</string>
+    <string name="policyExemple">Some Examples of data BenevOld collects and uses are :</string>
+    <string name="informationTitle">Some Information about BenevOld</string>
+    <string name="informationDescription">BenevOld is an app designed to help old people. We want
+        to make this planet a better place to those in need. Founded by three people from France.
+        We are a non profit organisation, and our interests are purely academical.</string>
+
+
+    <string name="taskTitleQuestion">Tell us more about your needs ?</string>
+    <string name="taskCategoryQuestion">What category does it aplies to ?</string>
+    <string name="taskContactQuestion">How can we contact you ?</string>
+    <string name="taskDetailsQuestion">Can you provide any more  details ? (optional)</string>
+    <string name="taskAdressQuestion">Show my address</string>
+    <string name="taskWhenQuestion">When do you need us to help you ?</string>
+    <string name="taskTimeQuestion">At what time do you need help ? (optional)</string>
+    <string name="taskCategoryOther">Other (precise)</string>
+
+
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Hour">00</string>
+    <string name="Minut">00</string>
+    <string name="hourthing">:</string>
+    <string name="Submit">Submit</string>
+
+    <string name="smaillPreview">Small sized preview</string>
+    <string name="fullPreview">Full preview</string>
+
+
+
+</resources>
