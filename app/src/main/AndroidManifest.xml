@@ -2,14 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ivan.benevold">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:windowSoftInputMode="adjustPan"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BenevOld">
-        <activity android:name=".PreviewTaskScreen"></activity>
+        <activity android:name=".MyTasksScreen"></activity>
+        <activity android:name=".MoreDetailsScreen" />
+        <activity android:name=".PreviewTaskScreen" />
         <activity android:name=".CreateTaskScreen" />
         <activity android:name=".InformationScreen" />
         <activity android:name=".PrivacyScrenn" />

@@ -1,5 +1,6 @@
 package com.ivan.benevold
 
+import LoginResponse
 import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
@@ -12,6 +13,8 @@ class PrivacyScrenn : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_privacy_screnn)
 
+        val dataResPrev = intent.extras?.get("data") as LoginResponse
+
 
         privacyScreen.background = ContextCompat.getDrawable(
                 this,
@@ -21,6 +24,7 @@ class PrivacyScrenn : AppCompatActivity() {
         val back = findViewById<TextView>(R.id.backPolicy)
         back.setOnClickListener {
             val intent = Intent(this, ProfileScreen::class.java)
+            intent.putExtra("data", dataResPrev);
             startActivity(intent)
         }
 

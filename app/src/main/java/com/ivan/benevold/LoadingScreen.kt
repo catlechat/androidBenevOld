@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.loading_screen.*
 
 
 class LoadingScreen : AppCompatActivity(), Animation.AnimationListener {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.loading_screen)
@@ -19,9 +20,9 @@ class LoadingScreen : AppCompatActivity(), Animation.AnimationListener {
             this,
             R.drawable.backround_gradient
         )
-
-        startAnimations();
+        startAnimations()
     }
+
 
     private fun startAnimations() {
         val fade = AnimationUtils.loadAnimation(this, R.anim.fadein)

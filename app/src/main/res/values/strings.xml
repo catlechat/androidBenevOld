@@ -41,12 +41,13 @@
     <string name="emailTest">ceaika007@yahoo.com</string>
     <string name="nulber">0616563508</string>
     <string name="adress">116 Avenue de la Republique</string>
-    <string name="adress2">92400 COURBEVOIE</string>
+    <string name="adress2">COURBEVOIE</string>
     <string name="editP">Edit Profile</string>
     <string name="save">Save</string>
     <string name="NF">Nothing found</string>
     <string name="phone">Phone</string>
     <string name="address">Address</string>
+    <string name="pictureLink">Link for the picture</string>
     <string name="city">City</string>
     <string name="contactTitle">Speak with out brilliant and knowledgeable support team</string>
     <string name="contactSubTitle">Support is available Mon-Fri 8AM-7PM ET / 10AM-Midnight GMT</string>
@@ -57,7 +58,7 @@
     <string name="emailValue">team.support@benevold.com</string>
     <string name="giveCall">Give us a call</string>
     <string name="callValue">(+33) 6 16 56 35 08</string>
-    <string name="comeSee">Come see us</string>
+    <string name="comeSee">Come to see us</string>
     <string name="seeValue">242 Rue du Faubourg Saint-Antoine, 75012 Paris</string>
     <string name="policyTitle">Review BenevOld Privacy Policy</string>
     <string name="policyDescription">It\'s important that you understand what information
@@ -76,11 +77,12 @@
     <string name="taskTitleQuestion">Tell us more about your needs ?</string>
     <string name="taskCategoryQuestion">What category does it aplies to ?</string>
     <string name="taskContactQuestion">How can we contact you ?</string>
-    <string name="taskDetailsQuestion">Can you provide any more  details ? (optional)</string>
+    <string name="taskDetailsQuestion">Can you provide any more  details ?</string>
     <string name="taskAdressQuestion">Show my address</string>
     <string name="taskWhenQuestion">When do you need us to help you ?</string>
-    <string name="taskTimeQuestion">At what time do you need help ? (optional)</string>
+    <string name="taskTimeQuestion">At what time do you need help ?</string>
     <string name="taskCategoryOther">Other (precise)</string>
+    <string name="atLeast">Enter at least a title</string>
 
 
     <string name="Yes">Yes</string>
@@ -89,9 +91,23 @@
     <string name="Minut">00</string>
     <string name="hourthing">:</string>
     <string name="Submit">Submit</string>
+    <string name="remove">Remove</string>
+    <string name="errorOn">Error on getting data</string>
+
 
     <string name="smaillPreview">Small sized preview</string>
     <string name="fullPreview">Full preview</string>
+
+
+    <string name="passwordMatch">Password don\'t match !</string>
+    <string name="passwordTwice">Please enter password twice !</string>
+    <string name="mailExist">Mail does not exist !</string>
+    <string name="mailDoesExist">Email exist allready!</string>
+    <string name="mailField">Please enter a mail !</string>
+    <string name="mailWrong">Mail does not exist or wrong password!</string>
+    <string name="loginFields">Please enter login and password !</string>
+    <string name="singupFields">Please enter all fields !</string>
+    <string name="messageOfTheDay">Unable to get the message of the day, so i wish you a good one instead</string>
 
 
 
