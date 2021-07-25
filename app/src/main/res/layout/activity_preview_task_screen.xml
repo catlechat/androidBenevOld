@@ -128,7 +128,7 @@
 
 
                 <ImageView
-                    android:id="@id/picture"
+                    android:id="@+id/picturef"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:background="@color/blueMiddle"

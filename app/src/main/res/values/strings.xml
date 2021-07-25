@@ -94,9 +94,16 @@
     <string name="remove">Remove</string>
     <string name="errorOn">Error on getting data</string>
 
+    <string name="noTitle">No title</string>
+    <string name="noDesc">No description</string>
+    <string name="noHour">No Hour</string>
+    <string name="noDate">No Date</string>
+
+
 
     <string name="smaillPreview">Small sized preview</string>
     <string name="fullPreview">Full preview</string>
+    <string name="okPassword">Password chaged with success</string>
 
 
     <string name="passwordMatch">Password don\'t match !</string>

@@ -14,6 +14,7 @@
         app:layout_constraintBottom_toTopOf="@id/middle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginStart="10dp"
@@ -29,13 +30,13 @@
             android:textColor="@color/whiteBlue"
             android:textSize="25sp"
             app:drawableStartCompat="@drawable/ic_baseline_chevron_left_24" />
-        <TextView
+        <Button
             android:id="@+id/saveText"
             android:textAlignment="textEnd"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:drawablePadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
             android:text="@string/save"
             android:textColor="@color/whiteBlue"
             android:textSize="25sp" />
@@ -47,8 +48,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
         android:gravity="center"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp">
@@ -56,7 +55,6 @@
         <ImageView
             android:layout_height="120dp"
             android:layout_width="120dp"
-            android:layout_marginTop="10dp"
             android:id="@+id/imageView1"
             android:src="@drawable/ic_user">
         </ImageView>
@@ -67,7 +65,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/middle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -104,7 +104,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:hint="@string/NF"
                 android:layout_width="match_parent"
-                android:id="@+id/emailField"
+                android:id="@+id/emailFieldUser"
                 android:layout_height="50dp"
                 android:textSize="20sp"
                 android:textAlignment="textStart"
@@ -122,7 +122,7 @@
                 android:hint="@string/NF"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/phoneField"
+                android:id="@+id/phoneFieldUser"
                 android:textColorHint="@color/blueNight"
                 android:textColor="@color/blueNight"
                 android:textSize="20sp"
@@ -140,7 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:textSize="20sp"
-                android:id="@+id/addressField"
+                android:id="@+id/addressFieldUser"
                 android:textAlignment="textStart"
                 android:textColorHint="@color/blueNight"
                 android:textColor="@color/blueNight"
@@ -156,7 +156,7 @@
                 android:hint="@string/NF"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/cityField"
+                android:id="@+id/cityFieldUser"
                 android:textSize="20sp"
                 android:textColor="@color/blueNight"
                 android:textAlignment="textStart"
@@ -173,7 +173,7 @@
                 android:hint="@string/NF"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/pictureField"
+                android:id="@+id/pictureFieldUser"
                 android:textSize="20sp"
                 android:textColor="@color/blueNight"
                 android:textAlignment="textStart"

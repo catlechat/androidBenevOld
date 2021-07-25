@@ -37,21 +37,23 @@ class PreviewTaskScreen : AppCompatActivity() {
         val time = findViewById<TextView>(R.id.hour)
 
         val picture = findViewById<ImageView>(R.id.picture)
+        val picturef = findViewById<ImageView>(R.id.picturef)
 
-        //TODO : Faire un appel api pour recuperer la photo et le nom du gars
-        ///call api to get user ifos and fill them to the things
+
         GlobalScope.launch(Dispatchers.Default) {
-            val req = LoginRequest(dataResPrev.user_id.toString(), dataResPrev.token.toString())
+            val req = ProfileRequest(dataResPrev.user_id.toString())
             try {
-                val dataRes = Network.api.userAPICallAsync(req).await()
-                if(dataRes.nom != null) {
+                val dataRes = Network.api.userAPICallAsync(req, dataResPrev.token.toString()).await()
+                if(dataRes.response?.nom != null) {
                     withContext(Dispatchers.Main) {
-                        name.setText(dataRes.nom.toString())
-                        f_name.setText(dataRes.nom.toString())
-                        if(dataRes.picLink != null){
-                            Picasso.get().load(dataRes.picLink.toString()).into(picture);
+                        name.setText(dataRes.response.nom.toString())
+                        f_name.setText(dataRes.response.nom.toString())
+                        if(dataRes.response.picLink != null){
+                            Picasso.get().load(dataRes.response.picLink.toString()).into(picture);
+                            Picasso.get().load(dataRes.response.picLink.toString()).into(picturef);
                         }else{
                             picture.setImageResource(R.drawable.ic_baseline_person_24)
+                            picturef.setImageResource(R.drawable.ic_baseline_person_24)
                         }
                     }
                 }
@@ -108,7 +110,6 @@ class PreviewTaskScreen : AppCompatActivity() {
 
                 val req = AnnonceRequest(
                         dataResPrev.user_id.toString(),
-                        dataResPrev.token.toString(),
                         task?.title.toString(),
                         task?.category.toString(),
                         task?.description.toString(),
@@ -119,7 +120,7 @@ class PreviewTaskScreen : AppCompatActivity() {
                         task?.date.toString(),
                         task?.time.toString())
                         try {
-                    val dataRes = Network.api.annonceAPICallAsync(req).await()
+                    val dataRes = Network.api.annonceAPICallAsync(req, dataResPrev.token.toString()).await()
                     if(dataRes.requestCode.equals("200")) {
                         withContext(Dispatchers.Main) {
                             intent.putExtra("data", dataResPrev);
@@ -142,7 +143,6 @@ class PreviewTaskScreen : AppCompatActivity() {
 }
 class AnnonceRequest internal constructor(
         val user_id: String,
-        val token: String,
         val title:String,
         val category: String,
         val description: String,

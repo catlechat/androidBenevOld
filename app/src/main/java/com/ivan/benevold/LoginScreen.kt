@@ -53,6 +53,7 @@ class LoginScreen : AppCompatActivity() {
                         val dataRes = Network.api.loginAPICallAsync(req).await()
                         if(dataRes.user_id != null) {
                             withContext(Dispatchers.Main) {
+
                                 intent.putExtra("data", dataRes)
                                 startActivity(intent)
                             }

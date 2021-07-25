@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.recyclerview.widget.RecyclerView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/rounded_preview_full"
     android:layout_height="match_parent"
-    android:id="@+id/list"
-    tools:context=".MyTasksScreen">
+    tools:context=".MyTasksScreen"
+    android:orientation="vertical">
 
-</androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/backButtonTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/back"
+        android:textColor="@color/blueNight"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        app:drawableStartCompat="@drawable/ic_baseline_chevron_left_24_blue"
+        app:layout_constraintBottom_toTopOf="@id/middle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="match_parent"
+        android:id="@+id/list">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

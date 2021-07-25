@@ -1,6 +1,8 @@
 package com.ivan.benevold
 
 data class Task(
+        val token: String? = null,
+        val id: String? = null,
         val title: String,
         val category: String,
         val description: String? = null,

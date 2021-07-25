@@ -1,6 +1,7 @@
 package com.ivan.benevold
 
 import LoginResponse
+import Network
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -8,6 +9,11 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_client_main_screen.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import retrofit2.HttpException
 
 class ClientMainScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,15 +22,13 @@ class ClientMainScreen : AppCompatActivity() {
         val dataResPrev = intent.extras?.get("data") as LoginResponse
         val messageOfDay = findViewById<TextView>(R.id.mainText)
 
-        //
-        ///TO DO : ADD THE MESSAGE OF THE DAY
-        /*
+
         GlobalScope.launch(Dispatchers.Default) {
             try {
-                val dataRes = Network.api.messageAPICallAsync().await()
-                if(dataRes.message != null) {
+                val dataRes = Network.api.messageAPICallAsync(dataResPrev.token.toString()).await()
+                if(dataRes.response != null) {
                     withContext(Dispatchers.Main) {
-                        messageOfDay.text = dataRes.message
+                        messageOfDay.text = dataRes.response
                     }
                 }
             } catch (e: HttpException) {
@@ -33,9 +37,6 @@ class ClientMainScreen : AppCompatActivity() {
                 }
             }
         }
-        */
-        //
-        //
 
         clientScreen.background = ContextCompat.getDrawable(
             this,
