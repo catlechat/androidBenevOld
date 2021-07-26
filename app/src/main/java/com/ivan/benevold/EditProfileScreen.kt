@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
 import com.google.gson.annotations.SerializedName
@@ -109,7 +108,6 @@ class EditProfileScreen : AppCompatActivity() {
                 try {
                     val dataRes = Network.api.userUpdateAPICallAsync(req,dataResPrev.token.toString()).await()
                     withContext(Dispatchers.Main) {
-                        Toast.makeText(this@EditProfileScreen, dataRes.requestCode, Toast.LENGTH_LONG).show()
                         intent.putExtra("data", dataResPrev);
                         startActivity(intent)
                     }
