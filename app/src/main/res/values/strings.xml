@@ -32,7 +32,7 @@
     <string name="welcomeBackMessage">WELCOME BACK, HOW CAN WE HELP YOU TODAY ?</string>
     <string name="myProfile">My Profile</string>
     <string name="settingsProfile">Edit Profile</string>
-    <string name="contactUs">Contact us</string>pri
+    <string name="contactUs">Contact us</string>
     <string name="privacy">Privacy</string>
     <string name="information">Information</string>
     <string name="shareApp">Share App</string>
@@ -49,7 +49,7 @@
     <string name="address">Address</string>
     <string name="pictureLink">Link for the picture</string>
     <string name="city">City</string>
-    <string name="contactTitle">Speak with out brilliant and knowledgeable support team</string>
+    <string name="contactTitle">Speak with our brilliant and knowledgeable support team</string>
     <string name="contactSubTitle">Support is available Mon-Fri 8AM-7PM ET / 10AM-Midnight GMT</string>
     <string name="ivan">Ivan CEAICOVSCHI</string>
     <string name="raph">Raphael ISRAEL</string>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BenevOld</string>
+    <string name="welcome">Bienvenue !</string>
+    <string name="pleaseLoginMessage">Connectez vous pour continuer</string>
+    <string name="forgotThePassword">Mot de passe oublié ?</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="name">Nom complet</string>
+    <string name="login">Login</string>
+    <string name="singup">S\'inscrire</string>
+    <string name="errorMessageLogin">Message d\'erreur</string>
+    <string name="newUser">Nouveau utilisateur ? Inscrivez-vous</string>
+    <string name="oldUser">Deja un compte ? Connectez-vous</string>
+
+    <string name="forgotPassword">Mot de passe oublié ?</string>
+    <string name="enterMail">Entrez votre mail pour continuer</string>
+    <string name="passwordMessage">Suivez les instructions pour pouvoir modifier votre mot de passe</string>
+    <string name="errorMail">Email non trouvé !</string>
+    <string name="send">Envoyer</string>
+    <string name="back">Retour</string>
+
+    <string name="newPassword">Nouveau mot de passe</string>
+    <string name="newPasswordMessage">Il doit avoir au moins 6 caracteres et une majuscule</string>
+    <string name="passwordAggain">Encore une fois</string>
+    <string name="passwordError">Les champs ne sont pas egaux !</string>
+    <string name="changeButton">Changer</string>
+    <string name="profil">Mon profile</string>
+    <string name="request">Mes demandes</string>
+    <string name="newrequest">Envoyer une nouvelle demande</string>
+    <string name="contact">Contact</string>
+    <string name="disconnect">Deconecter</string>
+    <string name="welcomeBackMessage">Bienvenu parmis nous, comment on peut vous aider ?</string>
+    <string name="myProfile">Mon profil</string>
+    <string name="settingsProfile">Modifier le profil</string>
+    <string name="contactUs">Contactez-nous</string>
+    <string name="privacy">Privacy</string>
+    <string name="information">Information</string>
+    <string name="shareApp">Partager l\'appli</string>
+    <string name="logOut">Se deconnecter</string>
+    <string name="nameTest">Ivan CEAICOVSCHI</string>
+    <string name="emailTest">ceaika007@yahoo.com</string>
+    <string name="nulber">0616563508</string>
+    <string name="adress">116 Avenue de la Republique</string>
+    <string name="adress2">COURBEVOIE</string>
+    <string name="editP">Modifier le profil</string>
+    <string name="save">OK</string>
+    <string name="NF">Rien trouvé</string>
+    <string name="phone">Telephone</string>
+    <string name="address">Address</string>
+    <string name="pictureLink">Lien vers la photo</string>
+    <string name="city">Ville</string>
+    <string name="contactTitle">Parléz avec notre brillante et inteligente equipe de support</string>
+    <string name="contactSubTitle">Le support est disponible Lundi-Vendredi 8H-19H / 10H-Minuit GMT</string>
+    <string name="ivan">Ivan CEAICOVSCHI</string>
+    <string name="raph">Raphael ISRAEL</string>
+    <string name="eduard">Eduard SERBAN</string>
+    <string name="sendEmail">Envoyez-nous un mail</string>
+    <string name="emailValue">team.support@benevold.com</string>
+    <string name="giveCall">Apellez-nous</string>
+    <string name="callValue">(+33) 6 16 56 35 08</string>
+    <string name="comeSee">Venez nous voir</string>
+    <string name="seeValue">242 Rue du Faubourg Saint-Antoine, 75012 Paris</string>
+    <string name="policyTitle">Avis sur la politique de confidencialité de BenevOld</string>
+    <string name="policyDescription">C\'est important de comprendre l\'information que Benevold collecte,
+        utilise et comment vous pouvez la controler. On explique tout en details dans notre derniere version
+        de la politique de confidentialité. Et vous pouvez examiner les points clés en dessous.
+        </string>
+
+    <string name="whyPolicy">Pour votre securité, toute la data collécté est seulement utilisé dans le but
+        de vous proteger, afin que vous vous sentez le plus secure possible.</string>
+    <string name="policyExemple">Voici les exemples de l\'information que Benevold collecte sur vous :</string>
+    <string name="informationTitle">Quelques informations sur Benevold</string>
+    <string name="informationDescription">Benevold est une aplication ayant pour le but d\'aider les personnes agées.
+        On veut rendre cette planete un meilleur endroit. On veut aider ceux qui sont en besoin. Fondée par trois étudiants de la France.
+        On est une organisation au but non lucratif, nos interets sont purement academiques.</string>
+
+    <string name="taskTitleQuestion">Parlez nous de votre besoin ?</string>
+    <string name="taskCategoryQuestion">Dans quel categorie il appartient ?</string>
+    <string name="taskContactQuestion">Comment on peut vous contacter ?</string>
+    <string name="taskDetailsQuestion">Donnez nous plus de details</string>
+    <string name="taskAdressQuestion">Afficher votre adresse</string>
+    <string name="taskWhenQuestion">Quand est ce que vous avez besoin d\'aide ?</string>
+    <string name="taskTimeQuestion">A quel heure ?</string>
+    <string name="taskCategoryOther">Autre (preciser)</string>
+    <string name="atLeast">Entrez au moins un titre</string>
+
+    <string name="Yes">Oui</string>
+    <string name="No">Non</string>
+    <string name="Hour">00</string>
+    <string name="Minut">00</string>
+    <string name="hourthing">:</string>
+    <string name="Submit">Valider</string>
+    <string name="remove">Supprimer</string>
+    <string name="errorOn">Erreur a la reception des données</string>
+
+    <string name="noTitle">Pas de titre</string>
+    <string name="noDesc">Pas de description</string>
+    <string name="noHour">Pas d\'heure</string>
+    <string name="noDate">Pas de date</string>
+
+
+
+    <string name="smaillPreview">Aperçu de petie taille</string>
+    <string name="fullPreview">Aperçu complet</string>
+    <string name="okPassword">Mot de passe modifié avec succes</string>
+    <string name="whyPolicyTitle">Pourquoi Benevold utilise votre data ?</string>
+
+
+
+    <string name="passwordMatch">Les mot de passe ne sont pas les memes !</string>
+    <string name="passwordTwice">Saisisez les deux champs !</string>
+    <string name="mailExist">Le mail n\'existe pas !</string>
+    <string name="mailDoesExist">Le mail existe deja!</string>
+    <string name="mailField">Saisisez un mail !</string>
+    <string name="mailWrong">Le mail existe pas ou le mot de passe est incorect!</string>
+    <string name="loginFields">Saisisez le mail et le mot de passe !</string>
+    <string name="singupFields">Saisisez tout les champs !</string>
+    <string name="messageOfTheDay">Impossible de recuperez le message du jour, alors on vous souhaite
+        une bonne journée à la place !</string>
+
+
+
+</resources>

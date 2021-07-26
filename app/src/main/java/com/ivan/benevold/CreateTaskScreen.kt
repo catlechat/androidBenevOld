@@ -17,6 +17,8 @@ import kotlinx.coroutines.withContext
 import retrofit2.HttpException
 import java.sql.Date
 import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class CreateTaskScreen : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -86,9 +88,15 @@ class CreateTaskScreen : AppCompatActivity(), AdapterView.OnItemSelectedListener
            val inputHours = findViewById<EditText>(R.id.input_hours)
            val inputMinutes = findViewById<EditText>(R.id.input_minutes)
 
+        val calendar = Calendar.getInstance()
+        inputDate.setOnDateChangeListener { view, year, month, dayOfMonth ->
+                       // set the calendar date as calendar view selected date
+                       calendar.set(year,month,dayOfMonth)
+                       // set this date as calendar view selected date
+            inputDate.date = calendar.timeInMillis
+        }
 
-           //TODO : Faire un appel api pour recuperer l'addresse et le tel et l'email
-
+        
            GlobalScope.launch(Dispatchers.Default) {
                val req = ProfileRequest(dataResPrev.user_id.toString())
                try {

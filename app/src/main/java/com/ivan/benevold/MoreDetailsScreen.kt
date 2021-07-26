@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.annotations.SerializedName
+import com.squareup.picasso.Picasso
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -88,14 +89,9 @@ class MoreDetailsScreen : AppCompatActivity() {
                 }
             } catch (e: HttpException) {
             }
-        }
-
-
-/*
-        GlobalScope.launch(Dispatchers.Default) {
-            val req = ProfileRequest(userID)
+            val request = ProfileRequest(userID)
             try {
-                val dataRes = Network.api.userAPICallAsync(req,userToken).await()
+                val dataRes = Network.api.userAPICallAsync(request,userToken).await()
                 if(dataRes.response?.nom != null) {
                     withContext(Dispatchers.Main) {
                         name.setText(dataRes.response.nom.toString())
@@ -110,7 +106,10 @@ class MoreDetailsScreen : AppCompatActivity() {
             }
         }
 
- */
+
+
+
+
 
         val back = findViewById<Button>(R.id.backMore)
         back.setOnClickListener {

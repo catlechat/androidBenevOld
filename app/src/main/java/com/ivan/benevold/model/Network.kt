@@ -8,13 +8,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.*
 import java.io.Serializable
 
-// Endpoint GET
-// Base URL = https://api.formation-android.fr/getProduct
-
 
 interface API {
-    ///  POST auth/signup?type=android
-
 
     @Headers( "Content-Type: application/json" )
     @POST("auth/signup?type=android")

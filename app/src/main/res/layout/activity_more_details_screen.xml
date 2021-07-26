@@ -182,12 +182,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingStart="40dp"
+            android:paddingStart="30dp"
             android:paddingTop="20dp"
-            android:paddingEnd="40dp">
+            android:paddingEnd="30dp">
 
             <Button
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:id="@+id/backMore"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
@@ -196,11 +196,11 @@
                 android:textSize="20sp"/>
             <Button
                 android:id="@+id/remove"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="@string/remove"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="30dp"
                 android:textColor="@color/whiteBlue"
                 android:textSize="20sp"/>
 
