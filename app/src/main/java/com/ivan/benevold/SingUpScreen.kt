@@ -42,7 +42,12 @@ class SingUpScreen : AppCompatActivity() {
         val singupClick = findViewById<TextView>(R.id.sungupButton)
         singupClick.setOnClickListener {
 
-            if(fullNameString.text.toString() != "" && loginString.text.toString() != "" && passwordString.text.toString() != ""){
+            val fullNameTrimed = fullNameString.text.toString().trim(' ')
+            val loginTrimed = loginString.text.toString().trim(' ')
+            val passwordTrimed = passwordString.text.toString().trim(' ')
+
+
+            if(fullNameTrimed != "" && loginTrimed != "" && passwordTrimed != ""){
                 val intent = Intent(this, ClientMainScreen::class.java)
                 GlobalScope.launch(Dispatchers.Default) {
                     val req = SingupRequest(fullNameString.text.toString(),loginString.text.toString(),passwordString.toString())

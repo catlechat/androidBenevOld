@@ -44,6 +44,7 @@ class LoginScreen : AppCompatActivity() {
         errotText.visibility = View.INVISIBLE
         val login = findViewById<Button>(R.id.loginButton)
 
+
         login.setOnClickListener {
             if(email.text.toString() != "" && password.text.toString() != ""){
                 val intent = Intent(this, ClientMainScreen::class.java)

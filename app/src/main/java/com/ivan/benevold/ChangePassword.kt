@@ -33,7 +33,13 @@ class ChangePassword : AppCompatActivity() {
         val sendClick = findViewById<Button>(R.id.change)
 
         sendClick.setOnClickListener {
-            if(passwordField.text.toString() != "" && passwordField_bis.text.toString() != ""){
+
+            val passwordFieldTrimed = passwordField.text.toString().trim(' ')
+            val passwordField_bisTrimed = passwordField_bis.text.toString().trim(' ')
+
+
+
+            if(passwordFieldTrimed != "" && passwordField_bisTrimed != ""){
                 if(passwordField.text.toString().equals(passwordField_bis.text.toString())){
                     val req = PasswordRequest(dataResPrev.user_id.toString(),passwordField.text.toString())
                     val intent = Intent(this, LoginScreen::class.java)

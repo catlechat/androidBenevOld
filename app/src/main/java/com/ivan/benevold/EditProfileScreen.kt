@@ -70,40 +70,44 @@ class EditProfileScreen : AppCompatActivity() {
         save.setOnClickListener {
             val intent = Intent(this, ProfileScreen::class.java)
             GlobalScope.launch(Dispatchers.Default) {
-                val user_id_ready = dataResPrev.user_id.toString()
-                var fullName_ready = fullName.text.toString()
-                if(fullName_ready == ""){
-                    fullName_ready = "pas de nom"
+
+
+                ///TRIME SPACE
+                var fullNameTrime = fullName.text.toString().trim(' ')
+                var emailTrime = email.text.toString().trim(' ')
+                var addressTrime = address.text.toString().trim(' ')
+                var cityTrime = city.text.toString().trim(' ')
+                var phoneTrime = phone.text.toString().trim(' ')
+                var picLinkTrime = picLink.text.toString().trim(' ')
+
+
+                if(fullNameTrime == ""){
+                    fullNameTrime = "pas de nom"
                 }
-                var address_ready = address.text.toString()
-                if(address_ready == ""){
-                    address_ready = "pas d'addresse"
+                if(addressTrime == ""){
+                    addressTrime = "pas d'addresse"
                 }
-                var city_ready = city.text.toString()
-                if(city_ready == ""){
-                    city_ready = "pas de ville"
+                if(cityTrime == ""){
+                    cityTrime = "pas de ville"
                 }
-                var email_ready = email.text.toString()
-                if(email_ready == ""){
-                    email_ready = "pas de mail"
+                if(emailTrime == ""){
+                    emailTrime = "pas de mail"
                 }
-                var phone_ready = phone.text.toString()
-                if(phone_ready == ""){
-                    phone_ready = "pas de numero"
+                if(phoneTrime == ""){
+                    phoneTrime = "pas de numero"
                 }
-                var picLink_ready = picLink.text.toString()
-                if(picLink_ready == ""){
-                    picLink_ready = "pas d'image"
+                if(picLinkTrime == ""){
+                    picLinkTrime = "pas d'image"
                 }
 
                 val req = UpdateRequest(
-                        user_id_ready,
-                        fullName_ready,
-                        address_ready,
-                        city_ready,
-                        email_ready,
-                        phone_ready,
-                        picLink_ready
+                        dataResPrev.user_id,
+                        fullNameTrime,
+                        addressTrime,
+                        cityTrime,
+                        emailTrime,
+                        phoneTrime,
+                        picLinkTrime
                         )
                 try {
                     val dataRes = Network.api.userUpdateAPICallAsync(req,dataResPrev.token.toString()).await()

@@ -125,7 +125,11 @@ class CreateTaskScreen : AppCompatActivity(), AdapterView.OnItemSelectedListener
 
            val submit = findViewById<Button>(R.id.task_submit)
            submit.setOnClickListener {
-               if(inputTitle.text.toString() != ""){
+
+               val inputTitleTrimed = inputTitle.text.toString().trim(' ')
+
+
+               if(inputTitleTrimed != ""){
                    val category = spinner.selectedItem.toString();
 
                    val phone = if (!rPhone.isChecked) null else inputPhone.text.toString()
